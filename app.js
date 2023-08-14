@@ -20,6 +20,7 @@ const app = express();
 app.use(compression());
 
 if (process.env.NODE_ENV !== 'test') {
+  console.log("HELLO");
   mongoose.connect(MongodbUrl, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
